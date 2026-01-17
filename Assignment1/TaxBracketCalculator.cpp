@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    int userIncome;
+    double userIncome;
     double tax, finalIncome;
 
     cout << "Enter your annual salary: ";
