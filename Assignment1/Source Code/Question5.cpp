@@ -42,7 +42,6 @@ int main(){
         finalIncome = userIncome - tax;
     }
 
-    
     // 50 - 100k
     else if (userIncome > 50000 && userIncome <= 100000){
         tax = ((userIncome - 50000) * 0.3) + 7000;
