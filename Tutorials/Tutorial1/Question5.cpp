@@ -42,11 +42,11 @@ int main(){
                 break;
             
             default:
-                cout << "The operator you have entered is invalid";
+                cout << "The operator you have entered is invalid" << endl;
                 break;
         }
     }
-    
+
     cout << "This is the result: " << result;
     return 0;
 }
