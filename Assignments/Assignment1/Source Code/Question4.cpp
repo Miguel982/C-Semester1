@@ -25,7 +25,7 @@ int main(){
         cout << "Cannot divide by 0. " << userNum1 << " is not divisible by " << userNum2 << "." <<endl;
     }
 
-    //Calculates if num1 can divide num2
+    //Calculates if num2 can divide num1
     if(userNum1 != 0){
         if (userNum2/userNum1 != 0 && userNum2%userNum1 == 0) {
             cout << userNum2 << " is divisible by " << userNum1 << "." <<endl;

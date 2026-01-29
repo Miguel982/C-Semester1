@@ -23,6 +23,7 @@ int main(){
 
     cout << "The dimensional weight is " << dimensionalWeight << " kg." << endl;
 
+    //Use the dimensional weight if it is greater than the actual weight
     if (dimensionalWeight > weight) {
         finalWeight = dimensionalWeight;
     }
