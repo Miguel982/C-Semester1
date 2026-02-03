@@ -99,15 +99,18 @@ void printRoof(int width){
 
     string output = "";
 
+    //Indents the first line so that the pyramid actually looks like a pyrammid
     for(int i = 1; i <= spaces; i++){
+        
         output.append(" ");
     }
 
     output.append("*");
 
     for (int i = 1; i <= (width/2) ; i++ ){
-        output.append("*");
-        output[output.length() - (i * 2)] = '*';
+        
+        output.append("*"); //Adds an asterix in the front
+        output[output.length() - (i * 2)] = '*'; //Adds an asterix behing the last asterix
 
         cout << output << endl;
     }
@@ -123,9 +126,12 @@ void printBase(int width, int height){
         layer = "";
 
         if (i == height){
+            
             for (int j = 0; j < width; j++){
-                layer.append("-");
+                
+                layer.append("-"); //Sets all the dashes for the bottom
             }
+
             cout << layer << endl;
             return;
         }
@@ -133,7 +139,8 @@ void printBase(int width, int height){
         layer.append("|");
 
         for (int j = 0; j < width - 2; j++) {
-            layer.append(" ");
+           
+            layer.append(" "); //Sets the spacing between the 2 pipes
         }
 
         layer.append("|");
