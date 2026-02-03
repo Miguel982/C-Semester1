@@ -2,10 +2,10 @@
 
 using namespace std;
 
-int main(){
+void printRoof(int); //Declare method to print the top of the house
+void printBase(int, int); //Declare method to print the bottom of the house
 
-    void printRoof(int); //Declare method to print the top of the house
-    void printBase(int, int); //Declare method to print the bottom of the house
+int main(){
 
     string userName; //Contains the user name
     string userInput; //The user's answer to the yes or no question
