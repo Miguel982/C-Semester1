@@ -75,5 +75,5 @@ double function3(int lowerBound, int upperBound){
         result += 1.0/i; //1.0 to do floating point division
     }
 
-    return result * 11;
+    return result;
 }
