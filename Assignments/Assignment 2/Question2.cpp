@@ -30,13 +30,13 @@ int main(){
 
         case 'b':
             function2(lowerBound, upperBound, resultFunc2);
-            cout << resultFunc2;
+            cout << "The difference between two numbers is " << resultFunc2 << endl;
             break;
         
         case 'c':
             resultFunc3 = function3(lowerBound, upperBound);
             cout << fixed << setprecision(3);
-            cout << resultFunc3;
+            cout << "The value of sum is: " << resultFunc3;
             break;
 
         default:

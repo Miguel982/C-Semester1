@@ -11,7 +11,7 @@ int main(){
     string userInput; //The user's answer to the yes or no question
 
     int houseCounter = 0; //Contains the number of houses the user has created
-    int errorCounter = 0; //Used to see how many times the user has failed to enter an even number
+    int errorCounter = 1; //Used to see how many times the user has failed to enter an even number
     int heightHouse; //Holds the width of the house
     int widthHouse; //Holds the height of the house
 
@@ -58,15 +58,17 @@ int main(){
         cout << "Enter height of the house you want me to draw: ";
         cin >> heightHouse;
 
+        errorCounter = 1;
+
         //Enter the width of the house
         while(true)
         {
             cout << "Please enter an even number for the width of the house (must be even numbers and bigger than 2): ";
             cin >> widthHouse;
 
-            if (widthHouse % 2 != 0 && widthHouse <= 2){
+            if (widthHouse % 2 != 0 || widthHouse <= 2){
 
-                if(errorCounter <= 3){
+                if(errorCounter < 3){
 
                     cout << "You enter " << widthHouse << " for the width. Not an even number!" << endl;
                     errorCounter++;
@@ -75,6 +77,7 @@ int main(){
 
                 else{
                     
+                    cout << "You enter " << widthHouse << " for the width. Not an even number!" << endl;
                     cout << "It seems you are having troubles entering even numbers! Program ends now.";
                     return 0; //Ends program
                 }
