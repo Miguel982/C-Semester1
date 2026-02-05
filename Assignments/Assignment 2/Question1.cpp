@@ -68,19 +68,14 @@ int main(){
 
             if (widthHouse % 2 != 0 || widthHouse <= 2){
 
-                if(errorCounter < 3){
+                cout << "You enter " << widthHouse << " for the width. Not an even number!" << endl;
+                errorCounter++;
+                if(errorCounter > 3){
 
-                    cout << "You enter " << widthHouse << " for the width. Not an even number!" << endl;
-                    errorCounter++;
-                    continue; //Lets the user re-enter their value
-                }
-
-                else{
-                    
-                    cout << "You enter " << widthHouse << " for the width. Not an even number!" << endl;
                     cout << "It seems you are having troubles entering even numbers! Program ends now.";
                     return 0; //Ends program
                 }
+                continue; //Lets the user re-enter their value                
             }
 
             break; //Exits while(true) loop
