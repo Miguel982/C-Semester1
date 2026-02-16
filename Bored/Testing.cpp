@@ -5,18 +5,26 @@ using namespace std;
 
 int main(){
 
-    ArrayList<int> array;
+    int arr[10] {0};
 
-    array.addFirst(10);
-    array.addFirst(15);
-    array.addLast(20);
+    // ArrayList<int> array;
 
-    auto iterator = array.begin();
+    // array.addFirst(10);
+    // array.addFirst(15);
+    // array.addLast(20);
 
-    for (int i = 0 ; i < 4; i++) {
-        cout << iterator.get() << endl;
-        iterator.next();
+    // auto iterator = array.begin();
+
+    // for (int i = 0 ; i < 4; i++) {
+    //     cout << iterator.get() << endl;
+    //     iterator.next();
+    // }
+
+    for (int i = 0; i < 10; i++)
+    {
+        cout << arr[i];
     }
+    
 
     return 0;
 }
