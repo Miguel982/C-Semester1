@@ -1,11 +1,12 @@
 #include "ArrayList.h"
 #include <iostream>
+#include <array>
 
 using namespace std;
 
 int main(){
 
-    int arr[10] {0};
+    array<int,10> arr {0};
 
     // ArrayList<int> array;
 
@@ -20,11 +21,10 @@ int main(){
     //     iterator.next();
     // }
 
-    for (int i = 0; i < 10; i++)
-    {
-        cout << arr[i];
-    }
-    
+    // for (int i = 0; i < 10; i++)
+    // { 
+    //     cout << i;
+    // }
 
     return 0;
 }
