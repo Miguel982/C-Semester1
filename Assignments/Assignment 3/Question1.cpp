@@ -4,6 +4,9 @@
 
 using namespace std;
 
+//Choose between manually inputing grades or randomly asssigning grades
+bool const randomGrades = false;
+
 void sortArray(vector<int>&);
 void printArray(vector<int>);
 void initializeArray(vector<int>&);
@@ -40,12 +43,20 @@ int main(){
 
     vector<int> studentGrades(numOfStudents);
 
-    //Sets random grades between 0 and 100
-    initializeArray(studentGrades);
+    if(randomGrades){
+
+        //Sets random grades between 0 and 100
+        initializeArray(studentGrades);
+    }
+    else{
+        for(int i = 0; i < numOfStudents; i++){
+            cout << "Input grade " << i + 1 << ": ";
+            cin >> studentGrades[i];
+        }
+    }
+    
     printArray(studentGrades);
     sortArray(studentGrades);
-
-    printArray(studentGrades);
 
     while(true) {
         
