@@ -3,10 +3,12 @@
 #include <array>
 
 using namespace std;
+const size_t SIZE = 10;
 
 int main(){
 
-    array<int,10> arr {0};
+    array<int,SIZE> arr{1,2,3,4,5,6,7,8,9,10};
+
 
     // ArrayList<int> array;
 
