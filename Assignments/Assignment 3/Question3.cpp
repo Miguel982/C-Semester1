@@ -40,7 +40,7 @@ int main(){
     cout << "\nThis is the result of adding your first and second matrices" << endl;
     printMatrix(addedMatrix);
 
-    result = isEqual(matrix1, matrix2)? "are " : "are not";
+    result = isEqual(matrix1, matrix2)? "are " : "are not ";
     cout << "\nYour first and second matrices " << result << "equal";
 
     return 0;
